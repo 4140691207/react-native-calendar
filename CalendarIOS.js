@@ -1,7 +1,6 @@
 'use strict';
 
 let React = require('react-native');
-let PropTypes = require('ReactPropTypes');
 let moment = require('moment');
 let _ = require('lodash');
 
@@ -24,15 +23,15 @@ let
 let Day = React.createClass({
 
   propTypes: {
-    newDay: PropTypes.object,
-    isSelected: PropTypes.bool,
-    isToday: PropTypes.bool,
-    hasEvent: PropTypes.bool,
-    currentDay: PropTypes.number,
-    onPress: PropTypes.func,
-    usingEvents: PropTypes.bool,
-    filler: PropTypes.bool,
-    customStyle: PropTypes.object,
+    newDay: React.PropTypes.object,
+    isSelected: React.PropTypes.bool,
+    isToday: React.PropTypes.bool,
+    hasEvent: React.PropTypes.bool,
+    currentDay: React.PropTypes.number,
+    onPress: React.PropTypes.func,
+    usingEvents: React.PropTypes.bool,
+    filler: React.PropTypes.bool,
+    customStyle: React.PropTypes.object,
   },
 
   getDefaultProps () {
@@ -111,21 +110,21 @@ let Day = React.createClass({
 
 let Calendar = React.createClass({
   propTypes: {
-    dayHeadings: PropTypes.array,
-    onDateSelect: PropTypes.func,
-    scrollEnabled: PropTypes.bool,
-    showControls: PropTypes.bool,
-    prevButtonText: PropTypes.string,
-    nextButtonText: PropTypes.string,
-    titleFormat: PropTypes.string,
-    onSwipeNext: PropTypes.func,
-    onSwipePrev: PropTypes.func,
-    onTouchNext: PropTypes.func,
-    onTouchPrev: PropTypes.func,
-    eventDates: PropTypes.array,
-    startDate: PropTypes.string,
-    selectedDate: PropTypes.string,
-    customStyle: PropTypes.object,
+    dayHeadings: React.PropTypes.array,
+    onDateSelect: React.PropTypes.func,
+    scrollEnabled: React.PropTypes.bool,
+    showControls: React.PropTypes.bool,
+    prevButtonText: React.PropTypes.string,
+    nextButtonText: React.PropTypes.string,
+    titleFormat: React.PropTypes.string,
+    onSwipeNext: React.PropTypes.func,
+    onSwipePrev: React.PropTypes.func,
+    onTouchNext: React.PropTypes.func,
+    onTouchPrev: React.PropTypes.func,
+    eventDates: React.PropTypes.array,
+    startDate: React.PropTypes.string,
+    selectedDate: React.PropTypes.string,
+    customStyle: React.PropTypes.object,
   },
 
   getDefaultProps() {
